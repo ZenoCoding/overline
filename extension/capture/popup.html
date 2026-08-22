@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mandarin Subtitles</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header class="popup-header">
+      <div class="product-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5.5 7.5h13v9h-13z"></path>
+          <path d="M8 11h3M13 11h3M8 14h5"></path>
+        </svg>
+      </div>
+      <div class="title-stack">
+        <strong>Mandarin subtitles</strong>
+        <span class="status-line">
+          <span id="statusIndicator" class="status-dot"></span>
+          <span id="statusText" class="header-status">Ready</span>
+        </span>
+      </div>
+      <span id="elapsed" class="timer">0:00</span>
+    </header>
+
+    <button id="toggleLive" type="button" class="btn-primary">Start subtitles</button>
+
+    <details id="settingsPanel" class="settings-panel">
+      <summary>
+        <span>Settings</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m5.5 6 2.5 2.5L10.5 6"></path></svg>
+      </summary>
+
+      <div class="settings-content">
+        <div class="field-group">
+          <label for="apiKey">OpenAI API key</label>
+          <div class="input-row">
+            <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off" spellcheck="false">
+            <button id="saveKeyBtn" type="button" class="btn-small">Save</button>
+          </div>
+          <div id="keyStatus" class="key-status">Checking key…</div>
+        </div>
+
+        <div class="field-group">
+          <label for="modeSelect">Subtitle source</label>
+          <select id="modeSelect">
+            <option value="live" selected>Live transcription</option>
+            <option value="preloaded">Episode 1 subtitles</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="modelSelect">Transcription model</label>
+          <select id="modelSelect">
+            <option value="gpt-live-transcribe" selected>GPT Live Transcribe</option>
+            <option value="gpt-transcribe">GPT Transcribe</option>
+            <option value="gpt-4o-transcribe">GPT-4o Transcribe</option>
+            <option value="whisper-1">Whisper</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <div class="label-row">
+            <label for="latencyModeSelect">Response speed</label>
+            <span id="latencyModeHint" class="field-hint">Low latency</span>
+          </div>
+          <select id="latencyModeSelect">
+            <option value="minimal">Fastest</option>
+            <option value="low" selected>Low latency</option>
+            <option value="medium">Balanced</option>
+            <option value="high">More context</option>
+            <option value="xhigh">Most context</option>
+          </select>
+        </div>
+
+        <div class="utility-action">
+          <button id="toggleExcerpt" type="button" class="btn-secondary">Save audio excerpt</button>
+        </div>
+      </div>
+    </details>
+  </main>
+  <script src="../src/cedict-data.js"></script>
+  <script src="../src/dict.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

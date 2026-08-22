@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewState": "provisional-with-human-reviewed-disputes",
+  "clip": {
+    "file": "link-click-ep1-clean-38s.webm",
+    "sha256": "f7f4bb22e25f03aede916a9dc3044b96edc365b9b9073dbd60c6530c1de863ab",
+    "durationSeconds": 38.404,
+    "sourceCapture": "link-click-ep1-excerpt-2026-08-19T06-14-52-660Z.webm",
+    "sourceStartSeconds": 50.7,
+    "sourceEndSeconds": 89.1
+  },
+  "normalization": "Unicode NFKC, lowercase, remove whitespace, punctuation, and symbols",
+  "thresholds": {
+    "maxCer": 0.2,
+    "minCoverage": 0.85,
+    "maxInsertionRate": 0.1,
+    "maxDuplicateFinals": 0
+  },
+  "live": {
+    "model": "gpt-live-transcribe",
+    "prompt": "Show: Link Click (时光代理人). Characters and entities: 程小时, 陆光, 乔苓, Emma, 雀德游戏, 时光照相馆. Verbatim Simplified Chinese dialogue with anime colloquialisms. Do not translate.",
+    "keywords": ["程小时", "陆光", "乔苓", "Emma", "雀德游戏", "时光照相馆"]
+  },
+  "utterances": [
+    { "id": "u01", "start": 0.0, "end": 2.4, "text": "年纪比你小，懂事比你早。", "reviewState": "provisional" },
+    { "id": "u02", "start": 2.8, "end": 4.0, "text": "乔苓姐。", "reviewState": "provisional" },
+    { "id": "u03", "start": 4.9, "end": 7.8, "text": "要不是看在你的面子上，我才懒得管他。", "reviewState": "provisional" },
+    { "id": "u04", "start": 8.3, "end": 10.0, "text": "这次任务的委托人，", "reviewState": "provisional" },
+    { "id": "u05", "start": 10.0, "end": 13.6, "text": "希望我们能在雀德游戏后天公布第三季度财报之前，", "reviewState": "provisional" },
+    { "id": "u06", "start": 13.6, "end": 16.0, "text": "提早拿到他们的核心财务数据。", "reviewState": "provisional" },
+    { "id": "u07", "start": 18.1, "end": 21.7, "text": "但这份资料被他们的财务总监单独监管。", "reviewState": "provisional" },
+    { "id": "u08", "start": 22.7, "end": 24.5, "text": "为了避免系统被黑，", "reviewState": "provisional" },
+    { "id": "u09", "start": 24.5, "end": 28.4, "text": "他也从不在电脑上留底，随身携带。", "reviewState": "human-reviewed" },
+    { "id": "u10", "start": 28.4, "end": 30.1, "text": "时间紧，任务重，", "reviewState": "provisional" },
+    { "id": "u11", "start": 30.1, "end": 33.6, "text": "就别卖关子了，快说突破口在哪儿吧。", "reviewState": "human-reviewed" },
+    { "id": "u12", "start": 35.3, "end": 38.4, "text": "他的助理：Emma。", "reviewState": "provisional" }
+  ]
+}

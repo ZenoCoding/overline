@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-ak-mandarin-player-fixture="true">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Player - Fixture</title>
+  <link rel="stylesheet" href="../extension/src/content.css">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #111; }
+    .player { position: relative; width: 100%; height: 100%; }
+    video { display: block; width: 100%; height: 100%; object-fit: contain; background: #111; }
+    .fake-caption { position: absolute; left: 0; right: 0; bottom: 15%; text-align: center; color: white; font: 22px system-ui; text-shadow: 0 2px 3px #000; }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <video controls muted autoplay loop src="fixture.mp4"></video>
+    <div class="fake-caption subtitle">Native English subtitle should be hidden</div>
+  </div>
+  <script src="../extension/src/cedict-data.js"></script>
+  <script src="../extension/src/dict.js"></script>
+  <script src="../extension/src/site-adapter.js"></script>
+  <script src="../extension/src/player.js"></script>
+</body>
+</html>

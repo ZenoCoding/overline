@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "source": "user-captured-episode-audio",
+  "episode": "Link Click — Episode 1 (EMMA)",
+  "notice": "Real dialogue from a user-initiated 90-second audio-only capture of the actively viewed AniKoto episode. Hosted transcription was conservatively corrected and timed with a local boundary pass; no video is stored.",
+  "provenance": {
+    "audioFile": "link-click-ep1-excerpt-2026-08-19T06-14-52-660Z.webm",
+    "captureDurationSeconds": 90,
+    "hostedModel": "gpt-4o-transcribe",
+    "hostedChunking": "Local ffmpeg silence windows, each bounded to 15 seconds; window offsets supplied draft segment timing.",
+    "boundaryCheck": "Homebrew openai-whisper 20250625_3, tiny model, Mandarin, word timestamps enabled.",
+    "annotation": "Mandarin corrections, segmentation, pinyin, and contextual English glosses were authored by the Codex worker using the captured transcript, local timing pass, and episode context; no deterministic pinyin/gloss library was used."
+  },
+  "reviewNotes": [
+    "Cue times are suitable for the UI demo but remain approximate until checked against the user's live player.",
+    "The low-confidence playful exchange around 44-50 seconds was intentionally omitted rather than reconstructed from uncertain audio.",
+    "The company name 雀德游戏 and character name 乔苓 were corrected using episode context; the remaining included lines had agreement between the hosted transcript and/or local timing pass."
+  ],
+  "alignment": {
+    "defaultEpisodeOffsetSeconds": 124,
+    "captureAnchorSeconds": 14,
+    "episodeAnchorSeconds": 138,
+    "evidence": "During the live failure report, the VidTube player was about 2:18 into the episode while its native English subtitle read 'I'm paying your debt.' In the captured scene order, that line falls between the 12.9s landlady cue and the 15.7s scolding cue, giving a defensible default offset near +124s.",
+    "uncertaintySeconds": 2.5,
+    "calibration": "Seek to 老租婆又来吸血喽。 and click Sync first line in the player overlay; use +/-0.5 for fine adjustment."
+  },
+  "cues": [
+    { "start": 11.4, "end": 12.9, "words": [
+      { "text": "老租婆", "pinyin": "lǎo zūpó", "gloss": "the old landlady (teasing)" },
+      { "text": "又", "pinyin": "yòu", "gloss": "again" },
+      { "text": "来", "pinyin": "lái", "gloss": "has come" },
+      { "text": "吸血喽。", "pinyin": "xīxuè lou", "gloss": "to bleed us dry again" }
+    ] },
+    { "start": 15.7, "end": 18.6, "words": [
+      { "text": "成天", "pinyin": "chéngtiān", "gloss": "all day long" },
+      { "text": "吊儿郎当的，", "pinyin": "diàor lángdāng de", "gloss": "slacking off / acting shiftless" },
+      { "text": "就你", "pinyin": "jiù nǐ", "gloss": "you, of all people" },
+      { "text": "这德行。", "pinyin": "zhè déxing", "gloss": "with that sorry attitude" }
+    ] },
+    { "start": 18.6, "end": 21.2, "words": [
+      { "text": "等着", "pinyin": "děngzhe", "gloss": "just wait to" },
+      { "text": "关门歇业，", "pinyin": "guānmén xiēyè", "gloss": "close up shop" },
+      { "text": "打包", "pinyin": "dǎbāo", "gloss": "pack your things" },
+      { "text": "滚蛋吧。", "pinyin": "gǔndàn ba", "gloss": "and get lost" }
+    ] },
+    { "start": 22.9, "end": 25.7, "words": [
+      { "text": "我", "pinyin": "wǒ", "gloss": "I" },
+      { "text": "从小", "pinyin": "cóngxiǎo", "gloss": "since childhood" },
+      { "text": "跟爸妈", "pinyin": "gēn bàmā", "gloss": "with my parents" },
+      { "text": "在这店里", "pinyin": "zài zhè diàn lǐ", "gloss": "in this shop" },
+      { "text": "长大。", "pinyin": "zhǎngdà", "gloss": "grew up" }
+    ] },
+    { "start": 25.7, "end": 28.3, "words": [
+      { "text": "他们", "pinyin": "tāmen", "gloss": "they (my parents)" },
+      { "text": "回来之前，", "pinyin": "huílái zhīqián", "gloss": "before they return" },
+      { "text": "我", "pinyin": "wǒ", "gloss": "I" },
+      { "text": "哪儿", "pinyin": "nǎr", "gloss": "anywhere" },
+      { "text": "都不会去。", "pinyin": "dōu bú huì qù", "gloss": "won't go at all" }
+    ] },
+    { "start": 28.3, "end": 31.2, "words": [
+      { "text": "你要", "pinyin": "nǐ yào", "gloss": "if you want to" },
+      { "text": "赶我走，", "pinyin": "gǎn wǒ zǒu", "gloss": "drive me out" },
+      { "text": "我就", "pinyin": "wǒ jiù", "gloss": "then I'll" },
+      { "text": "当场", "pinyin": "dāngchǎng", "gloss": "right on the spot" },
+      { "text": "原地上吊。", "pinyin": "yuándì shàngdiào", "gloss": "hang myself right here" }
+    ] },
+    { "start": 31.2, "end": 33.2, "words": [
+      { "text": "看你爸", "pinyin": "kàn nǐ bà", "gloss": "then let's see how your dad" },
+      { "text": "还怎么", "pinyin": "hái zěnme", "gloss": "could still manage to" },
+      { "text": "找", "pinyin": "zhǎo", "gloss": "find" },
+      { "text": "新租户。", "pinyin": "xīn zūhù", "gloss": "a new tenant" }
+    ] },
+    { "start": 33.2, "end": 34.2, "words": [
+      { "text": "幼稚。", "pinyin": "yòuzhì", "gloss": "Childish." }
+    ] },
+    { "start": 34.5, "end": 35.6, "words": [
+      { "text": "弱智。", "pinyin": "ruòzhì", "gloss": "Idiot. (insult)" }
+    ] },
+    { "start": 37.4, "end": 39.0, "words": [
+      { "text": "他", "pinyin": "tā", "gloss": "he" },
+      { "text": "刚说啥？", "pinyin": "gāng shuō shá", "gloss": "what did he just say?" }
+    ] },
+    { "start": 39.0, "end": 40.1, "words": [
+      { "text": "说你。", "pinyin": "shuō nǐ", "gloss": "He meant you." }
+    ] },
+    { "start": 40.1, "end": 42.1, "words": [
+      { "text": "乔苓姐，", "pinyin": "Qiáo Líng jiě", "gloss": "Sister Qiao Ling" },
+      { "text": "把照片", "pinyin": "bǎ zhàopiàn", "gloss": "the photograph" },
+      { "text": "拿来吧。", "pinyin": "ná lái ba", "gloss": "bring it over" }
+    ] },
+    { "start": 50.7, "end": 53.1, "words": [
+      { "text": "年纪", "pinyin": "niánjì", "gloss": "in age" },
+      { "text": "比你小，", "pinyin": "bǐ nǐ xiǎo", "gloss": "younger than you" },
+      { "text": "懂事", "pinyin": "dǒngshì", "gloss": "more sensible" },
+      { "text": "比你早。", "pinyin": "bǐ nǐ zǎo", "gloss": "earlier than you" }
+    ] },
+    { "start": 53.5, "end": 54.7, "words": [
+      { "text": "乔苓姐。", "pinyin": "Qiáo Líng jiě", "gloss": "Sister Qiao Ling." }
+    ] },
+    { "start": 55.6, "end": 58.5, "words": [
+      { "text": "要不是", "pinyin": "yàobúshì", "gloss": "if it weren't for" },
+      { "text": "看在", "pinyin": "kànzài", "gloss": "out of consideration for" },
+      { "text": "你的面子上，", "pinyin": "nǐ de miànzi shang", "gloss": "you / as a favor to you" },
+      { "text": "我才", "pinyin": "wǒ cái", "gloss": "only then would I" },
+      { "text": "懒得管他。", "pinyin": "lǎnde guǎn tā", "gloss": "otherwise I couldn't care less about him" }
+    ] },
+    { "start": 59.0, "end": 60.7, "words": [
+      { "text": "这次任务", "pinyin": "zhè cì rènwu", "gloss": "this mission" },
+      { "text": "的委托人，", "pinyin": "de wěituōrén", "gloss": "the client for" }
+    ] },
+    { "start": 60.7, "end": 64.3, "words": [
+      { "text": "希望我们", "pinyin": "xīwàng wǒmen", "gloss": "hopes that we can" },
+      { "text": "能在", "pinyin": "néng zài", "gloss": "before" },
+      { "text": "雀德游戏", "pinyin": "Quèdé Yóuxì", "gloss": "Quede Games" },
+      { "text": "后天公布", "pinyin": "hòutiān gōngbù", "gloss": "publishes the day after tomorrow" },
+      { "text": "第三季度财报之前，", "pinyin": "dì sān jìdù cáibào zhīqián", "gloss": "before its third-quarter financial report" }
+    ] },
+    { "start": 64.3, "end": 66.7, "words": [
+      { "text": "提早", "pinyin": "tízǎo", "gloss": "ahead of time" },
+      { "text": "拿到", "pinyin": "nádào", "gloss": "obtain" },
+      { "text": "他们的", "pinyin": "tāmen de", "gloss": "their" },
+      { "text": "核心财务数据。", "pinyin": "héxīn cáiwù shùjù", "gloss": "core financial data" }
+    ] },
+    { "start": 68.8, "end": 72.4, "words": [
+      { "text": "但这份资料", "pinyin": "dàn zhè fèn zīliào", "gloss": "but these materials" },
+      { "text": "被他们的", "pinyin": "bèi tāmen de", "gloss": "are by their" },
+      { "text": "财务总监", "pinyin": "cáiwù zǒngjiān", "gloss": "chief financial officer" },
+      { "text": "单独监管。", "pinyin": "dāndú jiānguǎn", "gloss": "personally controlled" }
+    ] },
+    { "start": 73.4, "end": 75.2, "words": [
+      { "text": "为了避免", "pinyin": "wèile bìmiǎn", "gloss": "in order to avoid" },
+      { "text": "系统被黑，", "pinyin": "xìtǒng bèi hēi", "gloss": "the system being hacked" }
+    ] },
+    { "start": 75.2, "end": 79.1, "words": [
+      { "text": "他从不", "pinyin": "tā cóngbù", "gloss": "he never" },
+      { "text": "在电脑上", "pinyin": "zài diànnǎo shang", "gloss": "on a computer" },
+      { "text": "留底，", "pinyin": "liúdǐ", "gloss": "leaves a stored copy" },
+      { "text": "随身携带。", "pinyin": "suíshēn xiédài", "gloss": "keeps it on him" }
+    ] },
+    { "start": 79.1, "end": 80.8, "words": [
+      { "text": "时间紧，", "pinyin": "shíjiān jǐn", "gloss": "time is tight" },
+      { "text": "任务重，", "pinyin": "rènwu zhòng", "gloss": "the mission is demanding" }
+    ] },
+    { "start": 80.8, "end": 84.3, "words": [
+      { "text": "你别", "pinyin": "nǐ bié", "gloss": "don't" },
+      { "text": "卖关子了，", "pinyin": "mài guānzi le", "gloss": "keep us in suspense" },
+      { "text": "快说", "pinyin": "kuài shuō", "gloss": "hurry and tell us" },
+      { "text": "突破口", "pinyin": "tūpòkǒu", "gloss": "the point of entry" },
+      { "text": "在哪儿吧。", "pinyin": "zài nǎr ba", "gloss": "where it is" }
+    ] },
+    { "start": 86.0, "end": 89.1, "words": [
+      { "text": "他的助理：", "pinyin": "tā de zhùlǐ", "gloss": "his assistant" },
+      { "text": "Emma。", "pinyin": "Emma", "gloss": "Emma (name)" }
+    ] }
+  ]
+}

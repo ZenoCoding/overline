@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "source": "representative-sample",
+  "episode": "Link Click — Episode 1 adapter demo",
+  "notice": "These lines are representative Mandarin written for UI testing. They are not a transcript of the episode.",
+  "cues": [
+    {
+      "start": 0.5,
+      "end": 3.7,
+      "words": [
+        { "text": "照片", "pinyin": "zhàopiàn", "gloss": "photograph" },
+        { "text": "里", "pinyin": "lǐ", "gloss": "inside" },
+        { "text": "藏着", "pinyin": "cángzhe", "gloss": "is hiding / contains" },
+        { "text": "一个", "pinyin": "yí ge", "gloss": "one (thing)" },
+        { "text": "秘密", "pinyin": "mìmì", "gloss": "secret" }
+      ]
+    },
+    {
+      "start": 4.0,
+      "end": 7.2,
+      "words": [
+        { "text": "你", "pinyin": "nǐ", "gloss": "you" },
+        { "text": "只能", "pinyin": "zhǐ néng", "gloss": "can only / must" },
+        { "text": "观察", "pinyin": "guānchá", "gloss": "observe" },
+        { "text": "不能", "pinyin": "bù néng", "gloss": "must not" },
+        { "text": "改变", "pinyin": "gǎibiàn", "gloss": "change (events)" }
+      ]
+    },
+    {
+      "start": 7.5,
+      "end": 10.4,
+      "words": [
+        { "text": "过去", "pinyin": "guòqù", "gloss": "the past" },
+        { "text": "发生的事", "pinyin": "fāshēng de shì", "gloss": "what happened" },
+        { "text": "已经", "pinyin": "yǐjīng", "gloss": "already" },
+        { "text": "决定了", "pinyin": "juédìng le", "gloss": "has been decided" }
+      ]
+    },
+    {
+      "start": 10.8,
+      "end": 13.8,
+      "words": [
+        { "text": "别", "pinyin": "bié", "gloss": "don't" },
+        { "text": "被", "pinyin": "bèi", "gloss": "by (passive marker)" },
+        { "text": "情绪", "pinyin": "qíngxù", "gloss": "emotion" },
+        { "text": "带着走", "pinyin": "dàizhe zǒu", "gloss": "get carried away" }
+      ]
+    },
+    {
+      "start": 14.1,
+      "end": 17.0,
+      "words": [
+        { "text": "记住", "pinyin": "jìzhù", "gloss": "remember" },
+        { "text": "我们的", "pinyin": "wǒmen de", "gloss": "our" },
+        { "text": "约定", "pinyin": "yuēdìng", "gloss": "agreement / promise" }
+      ]
+    },
+    {
+      "start": 17.3,
+      "end": 20.0,
+      "words": [
+        { "text": "准备好", "pinyin": "zhǔnbèi hǎo", "gloss": "be ready" },
+        { "text": "就", "pinyin": "jiù", "gloss": "then / once" },
+        { "text": "开始", "pinyin": "kāishǐ", "gloss": "begin" }
+      ]
+    }
+  ]
+}

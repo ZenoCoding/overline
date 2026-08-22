@@ -1,0 +1,17 @@
+.env
+.env.*
+node_modules/
+dist/*.zip
+
+# Local transcription inputs and generated outputs
+output/
+work/
+benchmark/link-click-ep1-clean-38s.webm
+benchmark/live-events.ndjson
+benchmark/latest-report.json
+
+# Local Codex/Impeccable workflow state
+.agents/
+.codex/
+.impeccable/config.local.json
+.impeccable/questions/

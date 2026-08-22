@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "description": "Higher-priority terms specific to supported Mandarin shows. General Mandarin belongs in CC-CEDICT, not here.",
+  "transcription": {
+    "prompt": "Mandarin dialogue from the Chinese animated drama Link Click (时光代理人). Transcribe verbatim in Simplified Chinese. Recurring characters include 程小时 (Cheng Xiaoshi), 陆光 (Lu Guang), and 乔苓 (Qiao Ling). Preserve character names, recurring places such as 时光照相馆, and colloquial sentence-final particles such as 喽, 嘛, 啦, 呀, 吧, and 呢.",
+    "languages": ["cmn"],
+    "keywords": [
+      "程小时",
+      "陆光",
+      "光光",
+      "乔苓",
+      "乔苓姐",
+      "时光照相馆"
+    ],
+    "episodes": {
+      "1": {
+        "prompt": "Episode 1 includes Emma and scenes involving 雀德游戏, a financial report, and the photo studio's landlords.",
+        "keywords": [
+          "Emma",
+          "雀德",
+          "雀德游戏",
+          "包租婆",
+          "包租公",
+          "董总",
+          "第三季度财报",
+          "核心财务数据",
+          "财务总监"
+        ]
+      }
+    },
+    "shows": {
+      "the-girl-downstairs": {
+        "prompt": "Natural conversational Mandarin from the modern university romance drama The Girl Downstairs (爱上她的理由). Transcribe verbatim in Simplified Chinese. Preserve character names, casual speech, forms of address such as 学姐, and sentence-final particles.",
+        "languages": ["cmn"],
+        "keywords": [
+          "爱上她的理由",
+          "袁君瑭",
+          "李诗雅",
+          "朱茱",
+          "崔若霓",
+          "郑国洙",
+          "徐云泽",
+          "陈星国",
+          "闵松大学",
+          "学姐",
+          "前偶像"
+        ],
+        "episodes": {}
+      }
+    }
+  },
+  "entries": [
+    { "term": "乔苓", "pinyin": "Qiáo Líng", "gloss": "Qiao Ling (character)", "kind": "name" },
+    { "term": "乔苓姐", "pinyin": "Qiáo Líng jiě", "gloss": "Sister Qiao Ling", "kind": "name" },
+    { "term": "陆光", "pinyin": "Lù Guāng", "gloss": "Lu Guang (character)", "kind": "name" },
+    { "term": "光光", "pinyin": "Guāngguang", "gloss": "Guangguang (nickname for Lu Guang)", "kind": "name" },
+    { "term": "程小时", "pinyin": "Chéng Xiǎoshí", "gloss": "Cheng Xiaoshi (character)", "kind": "name" },
+    { "term": "雀德", "pinyin": "Quèdé", "gloss": "Quede (fictional company)", "kind": "name" },
+    { "term": "雀德游戏", "pinyin": "Quèdé Yóuxì", "gloss": "Quede Games (fictional company)", "kind": "name" },
+    { "term": "时光照相馆", "pinyin": "Shíguāng Zhàoxiàngguǎn", "gloss": "Time Photo Studio", "kind": "name" },
+    { "term": "老租婆", "pinyin": "lǎo zūpó", "gloss": "the old landlady (teasing)", "kind": "show-expression" },
+    { "term": "Emma", "pinyin": "Emma", "gloss": "Emma (name)", "kind": "name" },
+    { "term": "爱上她的理由", "pinyin": "Àishàng Tā de Lǐyóu", "gloss": "The Girl Downstairs (series title)", "kind": "name" },
+    { "term": "袁君瑭", "pinyin": "Yuán Jūntáng", "gloss": "Yuan Juntang (character)", "kind": "name" },
+    { "term": "李诗雅", "pinyin": "Lǐ Shīyǎ", "gloss": "Li Shiya (character)", "kind": "name" },
+    { "term": "朱茱", "pinyin": "Zhū Zhū", "gloss": "Zhu Zhu (character)", "kind": "name" },
+    { "term": "崔若霓", "pinyin": "Cuī Ruòní", "gloss": "Cui Ruoni (character)", "kind": "name" },
+    { "term": "郑国洙", "pinyin": "Zhèng Guózhū", "gloss": "Zheng Guozhu (character)", "kind": "name" },
+    { "term": "徐云泽", "pinyin": "Xú Yúnzé", "gloss": "Xu Yunze (character)", "kind": "name" },
+    { "term": "陈星国", "pinyin": "Chén Xīngguó", "gloss": "Chen Xingguo (character)", "kind": "name" },
+    { "term": "闵松大学", "pinyin": "Mǐnsōng Dàxué", "gloss": "Minsong University (fictional school)", "kind": "name" },
+    { "term": "拿着", "pinyin": "ná zhe", "gloss": "holding; carrying", "kind": "common-expression" },
+    { "term": "家伙", "pinyin": "jiāhuo", "gloss": "guy; fellow; thing; tool; weapon", "kind": "common-expression" }
+  ]
+}

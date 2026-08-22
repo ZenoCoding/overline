@@ -1,0 +1,78 @@
+{
+  "manifest_version": 3,
+  "name": "Mandarin Hover Subtitles — AniKoto",
+  "version": "0.5.0",
+  "description": "Live interactive Mandarin word subtitles for supported Chinese-language shows on AniKoto.",
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "offscreen",
+    "storage",
+    "scripting",
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://anikototv.to/*",
+    "https://vidtube.site/*",
+    "https://megaplay.buzz/*",
+    "https://api.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://anikototv.to/watch/link-click-2e0jm/ep-*",
+        "https://anikototv.to/watch/the-girl-downstairs-9eddv/ep-*"
+      ],
+      "js": [
+        "src/cedict-data.js",
+        "src/dict.js",
+        "src/site-adapter.js",
+        "src/outer.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://vidtube.site/*",
+        "https://megaplay.buzz/*"
+      ],
+      "js": [
+        "src/cedict-data.js",
+        "src/dict.js",
+        "src/site-adapter.js",
+        "src/player.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "match_origin_as_fallback": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/link-click-ep1.real.json",
+        "capture/audio-processor.js"
+      ],
+      "matches": [
+        "https://anikototv.to/*",
+        "https://vidtube.site/*",
+        "https://megaplay.buzz/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Mandarin subtitles",
+    "default_popup": "capture/popup.html"
+  }
+}

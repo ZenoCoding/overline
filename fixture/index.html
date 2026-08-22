@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-ak-mandarin-outer-fixture="true">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-origin Mandarin Subtitle Fixture</title>
+  <link rel="stylesheet" href="../extension/src/content.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0d0e12; color: #ddd; font: 14px system-ui; }
+    main { width: min(960px, 92vw); }
+    iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 14px; box-shadow: 0 24px 70px #000; background: #111; }
+    p { color: #999; }
+  </style>
+</head>
+<body>
+  <main>
+    <iframe data-ak-player-frame="true" title="Video Player - Fixture" src="http://127.0.0.1:4174/fixture/player.html" allow="autoplay"></iframe>
+    <p>Cross-origin player fixture. Run the project on ports 4173 and 4174.</p>
+  </main>
+  <script src="../extension/src/cedict-data.js"></script>
+  <script src="../extension/src/dict.js"></script>
+  <script src="../extension/src/site-adapter.js"></script>
+  <script src="../extension/src/outer.js"></script>
+</body>
+</html>

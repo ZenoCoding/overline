@@ -1,0 +1,18 @@
+{
+  "name": "mandarin-subtitle-hover-poc",
+  "private": true,
+  "version": "0.5.0",
+  "type": "module",
+  "scripts": {
+    "build:dictionary": "node scripts/build-cedict.mjs",
+    "check": "node scripts/validate.mjs",
+    "test": "npm run check && node tests/duration-validation.mjs && node tests/api-key-validation.mjs && node tests/storage-fail-open-test.mjs && node tests/transcription-request.mjs && node tests/live-transcription-cue.mjs && node tests/live-cue-jitter-test.mjs && node tests/subtitle-linger-test.mjs && node tests/segmentation-edge-cases.mjs && node tests/fixture-cross-origin-e2e.mjs && node tests/latency-benchmark.mjs && node tests/dict-test.mjs && node tests/dynamic-resegmentation-test.mjs && node tests/live-integration-regression.mjs && node tests/asr-benchmark.mjs && node tests/player-time-mapping.mjs && node tests/hybrid-transcript-alignment.mjs",
+    "benchmark": "node scripts/asr-benchmark.mjs",
+    "benchmark:preflight": "node scripts/asr-benchmark.mjs --preflight",
+    "benchmark:latest": "node scripts/asr-benchmark.mjs --events benchmark/live-events.ndjson",
+    "benchmark:live": "node scripts/asr-benchmark.mjs --live",
+    "capture:validate": "node scripts/validate-timeline-capture.mjs",
+    "transcribe:timestamps": "node scripts/transcribe-word-timestamps.mjs",
+    "transcribe:align": "node scripts/hybrid-transcript-alignment.mjs"
+  }
+}
