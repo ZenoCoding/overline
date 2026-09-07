@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Ovelrine",
+  "name": "Overline",
   "version": "0.5.0",
   "description": "Live interactive Mandarin word subtitles for supported Chinese-language shows on AniKoto.",
   "permissions": [
@@ -72,7 +72,7 @@
     }
   ],
   "action": {
-    "default_title": "Ovelrine",
+    "default_title": "Overline",
     "default_popup": "capture/popup.html"
   }
 }

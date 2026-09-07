@@ -1,4 +1,4 @@
-# Ovelrine
+# Overline
 
 A small Manifest V3 Chrome extension that overlays interactive live Mandarin subtitles on supported Chinese-language AniKoto shows:
 
